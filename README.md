@@ -1,7 +1,7 @@
 # Space debris detection AI
 
 This repo hosts all the code and data needed to replicate the AI detection system that was built for my MSc project: "AI for space debris detection & orbit reconstruction".
-
+The data can be found in the following Google Drive link: https://drive.google.com/drive/folders/1fwEwQbzbYTEcPcD9p_AiPfQqSwP30uyv?usp=sharing
 # Final system example
 The following gif visualizes the AI detection stage in a few steps:
 1. Records 8 frames of captured video.
