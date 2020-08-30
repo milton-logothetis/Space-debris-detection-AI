@@ -9,7 +9,7 @@ The following gif visualizes the AI detection stage in a few steps:
 3. Runs through Faster R-CNN object detector.
 4. Collects predictions and plots bounding box (slighlty offset from actual, for visualization purposes).
 5. Centers camera payload to debris origin (assuming an appropriate gimbal system).
-6. Collects telemetry data, camera parameters and prediction results to calculate parameters of interest (e.g. debris size, speed etc.).
+6. Collects telemetry data, camera parameters and prediction results to calculate parameters of interest (e.g. debris position, speed etc.).
 7. Repeats for the next 8 frames.
 
 ![Final detection system example](https://github.com/milton-logothetis/Space-debris-detection-AI/blob/master/system_example.gif)
