@@ -13,3 +13,5 @@ The following gif visualizes the AI detection stage in a few steps:
 7. Repeats for the next 8 frames.
 
 ![Final detection system example](https://github.com/milton-logothetis/Space-debris-detection-AI/blob/master/system_example.gif)
+
+*note the actual speed of the process has been slowed down to around 1/3 through .gif conversion
