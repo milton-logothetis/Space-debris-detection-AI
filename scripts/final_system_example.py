@@ -92,7 +92,7 @@ focal_length = 2680 # focal length [mm]
 sensorSz = 26.624000549316406 # square sensor size [mm]
 
 OSF = 40 # specify OffSet Factor for a more visible bbox [in pixels]
-videoFolder = 'C:/Users/Smilon/Desktop/Academic/Uni/Surrey/AI for space debris detection & orbit modelling/data/final_system_animation'
+videoFolder = '/data/final_system_animation'
 files = os.listdir(videoFolder)
 
 # Separate true label files from animations (true labels = actual object location)
