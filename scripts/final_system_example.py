@@ -1,15 +1,8 @@
-# Combine video sequences into a single one and superimpose bounding boxes in evaluation frames.
-
-# 1. Split all videos in respective frames and concatenate with the right order
-# 2. After first 8 frames (where prediction occurs) superimpose bounding box that moves as camera moves (use transforma-
-# rion matrix at camera plane).
-# I.e all frames will contain bounding box apart from first 8, and all bounding box locations will be updated in each frame.
-# But whenever new prediction occurs, bounding box is updated ONLY with predicted location.
-# 3. Join frames into a single video file.
-
 import os, cv2, json
 import numpy as np
-from math import *
+
+# Combine video sequences into a single one and superimpose bounding boxes in evaluation frames.
+# Additionally, calculate and append useful parameters using output satellite telemetry, range measurements and object detection predictions.
 
 def dict2vec(dict):
     x = dict['x']
@@ -148,10 +141,3 @@ video = cv2.VideoWriter(os.path.join(videoFolder, 'system_example.avi'),cv2.Vide
 for i in range(len(frames)):
     video.write(frames[i])
 video.release()
-
-# 1. Read DE vector from a .txt file output from Simulation.blend (DE recorded at last frame of every eval period)
-# 2. Read satellite position from .txt file output from Blender
-# 3. Create a function that uses DE, location of satellite to calculate position,size & velocity of debris (range=sqrt(directionVector_actual))
-# 4. Overlay debris information in final animation (FPS, size, position XYZ, speed) & update every 8 frames
-
-
