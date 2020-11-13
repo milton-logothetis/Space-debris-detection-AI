@@ -4,6 +4,9 @@ This repo hosts all the code and data needed to replicate the AI detection syste
 
 The data can be found in the following Google Drive link: https://drive.google.com/drive/folders/1fwEwQbzbYTEcPcD9p_AiPfQqSwP30uyv?usp=sharing
 
+The complete Thesis report can be found at:
+https://drive.google.com/file/d/1nlkMCNYsAHYEn82DAiREmvY1AluE920m/view?usp=sharing
+
 # Final system example
 The following gif visualizes the AI detection stage in a few steps:
 1. Records 8 frames of captured video.
